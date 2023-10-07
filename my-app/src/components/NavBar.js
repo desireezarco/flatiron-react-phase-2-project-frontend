@@ -22,10 +22,50 @@ function NavBar(){
                     <GiBigDiamondRing className='navbar-icon' />
                     Mona & Dixon
                 </Link>
+                <div className='menu-icon' onClick={handleClick}>
+                    {click ? <FaTimes /> : <FaBars />}
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className='nav-items'>
+                        <NavLink 
+                        to="/" 
+                        className={({ isActive}) => 
+                        "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMenu}
+                    >
+                        Home
+                        </NavLink>
+                    </li>
+                    <li className='nav-items'>
+                        <NavLink 
+                        to="/rsvp" 
+                        className={({ isActive}) => 
+                        "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMenu}
+                    >
+                        RSVP
+                        </NavLink>
+                    </li>
+                    <li className='nav-items'>
+                        <NavLink 
+                        to="/messages" 
+                        className={({ isActive}) => 
+                        "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMenu}
+                    >
+                        Messages
+                        </NavLink>
+                    </li>
+                </ul>
             </div>
         </nav>
         </IconContext.Provider>
         </>
-    )}
+    )
+}
+
 
 export default NavBar;
