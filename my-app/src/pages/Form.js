@@ -3,11 +3,15 @@ import React from 'react';
 
 const Form = () => {
     const [name, setName] = useState('');
-    const [message, setMessage] = useState('');
+    const [email, setEmail] = useState('');
+    const [food, setFood] = useState('steak and mushrooms');
 
 
     const handleSubmit = (e) => {
         e.preventDefault(); 
+        const form = { name, email, food}
+
+        console.log(form);
     }
     
     return (
@@ -23,14 +27,19 @@ const Form = () => {
                 onChange={(e) => setName(e.target.value)}
                 />
             <label>Email:</label>
-            <textarea
+            <input 
+                type='text'
                 required
-                ></textarea>
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                />
             <label>Dinner Choice:</label>
-            <select>
+            <select
+                value={food}
+                onChange={(e) => setFood(e.target.value)}>
                 <option value="steak and mushrooms">Steak and mushrooms</option>
                 <option value="salmon and veggies">Salmon and veggies</option>
-                <option value="pasta">Pasta</option>
+                <option value="seafood pasta">Seafood Pasta</option>
             </select>
             <button>Submit</button>
         </form>
