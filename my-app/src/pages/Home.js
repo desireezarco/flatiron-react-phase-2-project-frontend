@@ -3,9 +3,13 @@ import React from "react";
 function Home() {
   return (
     <div className="home">
-      <h2>Mona & Dixon's Wedding</h2>
+      <h3>Mona & Dixon's Wedding</h3>
     </div>
+  
   );
 }
 
 export default Home;
+
+
+

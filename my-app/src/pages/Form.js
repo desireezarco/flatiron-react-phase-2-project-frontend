@@ -4,12 +4,13 @@ import React from 'react';
 const Form = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
     const [food, setFood] = useState('');
 
 
     const handleSubmit = (e) => {
         e.preventDefault(); 
-        const form = { name, email, food}
+        const form = { name, email, message, food}
         console.log(form)
         fetch('http://localhost:3000/guests',{
             method: "POST",
@@ -22,23 +23,29 @@ const Form = () => {
     
     return (
         <div className='form'>
-        <h1>Join Us On Our Special Day!</h1>
-        <h2>RSVP Here</h2>
+        <h2>Join Us On Our Special Day!</h2>
+        <h4>RSVP Here</h4>
         <form onSubmit={handleSubmit}>
             <label>Name:</label>
             <input 
                 type='text'
                 required
                 value={name}
-                onChange={(e) => setName(e.target.value)}
-                />
+                onChange={(e) => setName(e.target.value)}/>
+
             <label>Email:</label>
             <input 
                 type='text'
                 required
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                />
+                onChange={(e) => setEmail(e.target.value)}/>
+
+            <label>Message for the Bride & Groom:</label>
+            <input 
+                type='text'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}/>
+
             <label>Dinner Choice:</label>
             <select
                 value={food}

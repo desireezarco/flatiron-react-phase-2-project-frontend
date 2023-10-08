@@ -7,7 +7,19 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.home,
+/* body {
+  background-image: url(/images/couple.png);
+} */
+
+.home {
+  background-image: url('./couple.png');
+  /* background-size: ; */
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  font-size: 3rem;
+}
+
 .form,
 .messages {
   display: flex;
@@ -23,6 +35,7 @@
   margin-left: 1rem;
   font-size: 100px;
 }
+
 
 /* #error-page {
   display: flex;
