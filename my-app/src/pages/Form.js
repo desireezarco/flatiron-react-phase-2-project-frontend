@@ -1,17 +1,20 @@
 import { useState } from 'react';
 import React from 'react';
 
+//set useState for each value
 const Form = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [food, setFood] = useState('');
 
-
+//handleSubmit function
     const handleSubmit = (e) => {
         e.preventDefault(); 
         const form = { name, email, message, food}
         console.log(form)
+
+//using POST fetch request
         fetch('http://localhost:3000/guests',{
             method: "POST",
             headers: {"Content-Type": "application/json"},
