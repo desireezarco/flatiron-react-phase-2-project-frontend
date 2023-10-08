@@ -6,23 +6,24 @@ const RSVP = () => {
     
     return (
         <div className='form'>
+        <h1>Join Us On Our Special Day!</h1>
         <h2>RSVP Here</h2>
         <form>
-            <label>RSVP</label>
+            <label>Name:</label>
             <input 
                 type='text'
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 />
-            <label>RSVP 2</label>
+            <label>Email:</label>
             <textarea
                 required
                 ></textarea>
-            <label>RSVP 3</label>
+            <label>Dinner Choice:</label>
             <select>
-                <option value="mario">Mario</option>
-                <option value="yoshi">Yoshi</option>
+                <option value="steak and mushrooms">Steak and mushrooms</option>
+                <option value="salmon and veggies">Salmon and veggies</option>
             </select>
             <button>Submit</button>
         </form>
