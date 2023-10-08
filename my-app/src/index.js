@@ -1,15 +1,12 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/NavBar";
 import "./App.css";
 import Home from "./pages/Home";
 import Messages from "./pages/Messages";
 import Form from "./pages/Form";
+import background from './images/Mona&Dixon.png'
 
 const Layout = () => {
   return (
@@ -30,7 +27,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "form",
+        path: "rsvp",
         element: <Form />,
       },
       {
@@ -40,6 +37,8 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+
 
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />

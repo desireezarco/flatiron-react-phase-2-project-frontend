@@ -4,14 +4,20 @@ import React from 'react';
 const Form = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [food, setFood] = useState('steak and mushrooms');
+    const [food, setFood] = useState('');
 
 
     const handleSubmit = (e) => {
         e.preventDefault(); 
         const form = { name, email, food}
-
-        console.log(form);
+        console.log(form)
+        fetch('http://localhost:3000/guests',{
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(form)
+        }).then(() => {
+            console.log('new form added')
+        })
     }
     
     return (
@@ -37,6 +43,7 @@ const Form = () => {
             <select
                 value={food}
                 onChange={(e) => setFood(e.target.value)}>
+                <option></option>
                 <option value="steak and mushrooms">Steak and mushrooms</option>
                 <option value="salmon and veggies">Salmon and veggies</option>
                 <option value="seafood pasta">Seafood Pasta</option>

@@ -1,19 +1,21 @@
 {
-  "posts": [
+  "guests": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Desiree",
+      "email": "desireeannzarco7@gmail.com"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "des",
+      "email": "desireeannzarco7@gmail.com",
+      "food": "steak and mushrooms",
+      "id": 2
+    },
+    {
+      "name": "d",
+      "email": "s",
+      "food": "salmon and veggies",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
