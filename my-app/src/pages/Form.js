@@ -1,20 +1,26 @@
 import { useState } from 'react';
 import React from 'react';
 
-const RSVP = () => {
-    const [title, setTitle] = useState();
+const Form = () => {
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+    }
     
     return (
         <div className='form'>
         <h1>Join Us On Our Special Day!</h1>
         <h2>RSVP Here</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
             <label>Name:</label>
             <input 
                 type='text'
                 required
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 />
             <label>Email:</label>
             <textarea
@@ -24,6 +30,7 @@ const RSVP = () => {
             <select>
                 <option value="steak and mushrooms">Steak and mushrooms</option>
                 <option value="salmon and veggies">Salmon and veggies</option>
+                <option value="pasta">Pasta</option>
             </select>
             <button>Submit</button>
         </form>
@@ -31,4 +38,4 @@ const RSVP = () => {
 )
 }
 
-export default RSVP;
+export default Form;

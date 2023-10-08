@@ -9,7 +9,7 @@ import Navbar from "./components/NavBar";
 import "./App.css";
 import Home from "./pages/Home";
 import Messages from "./pages/Messages";
-import RSVP from "./pages/RSVP";
+import Form from "./pages/Form";
 
 const Layout = () => {
   return (
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "rsvp",
-        element: <RSVP />,
+        path: "form",
+        element: <Form />,
       },
       {
         path: "messages",
