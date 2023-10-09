@@ -11,6 +11,13 @@ fetch('http://localhost:3000/guests',{
     return response.json()
 })
     .then(data => console.log(data))
+
+    return (
+        <div className="message">
+        <h1>Message Board Goes Here</h1>
+        </div>
+    )
 }
+
 
 export default Messages;
