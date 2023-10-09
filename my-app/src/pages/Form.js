@@ -23,7 +23,8 @@ const Form = () => {
             console.log('new form added')
         })
     }
-    
+
+//form
     return (
         <div className='form'>
         <h2>Join Us On Our Special Day!</h2>
