@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Form from "./Form";
+// import Form from "./Form";
 
 const Messages = () =>{
     const [messages, setMessage] = useState(null);
@@ -9,13 +9,16 @@ const Messages = () =>{
         .then(response => {
             return response.json()
         }) 
+        .then(data =>{
+            setMessage(data);
+        })
     }, [])
 
-// return (
-//     <div className='messages'>
-//         {Messages && <Messages messages={messages} />}
-//     </div>
-// )
+return (
+    <div className='messages'>
+        
+    </div>
+)
 }
 
 export default Messages;
