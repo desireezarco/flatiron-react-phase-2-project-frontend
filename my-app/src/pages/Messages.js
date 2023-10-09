@@ -1,24 +1,16 @@
-import { useState, useEffect } from 'react';
-// import Form from "./Form";
 
-const Messages = () =>{
-    const [messages, setMessage] = useState(null);
 
-    useEffect(()=>{
-        fetch('http://localhost:3000/guests')
-        .then(response => {
-            return response.json()
-        }) 
-        .then(data =>{
-            setMessage(data);
-        })
-    }, [])
+const Messages = () => {
 
-return (
-    <div className='messages'>
-        
-    </div>
-)
+fetch('http://localhost:3000/guests',{
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json"
+    },
+}).then(response => {
+    return response.json()
+})
+    .then(data => console.log(data))
 }
 
 export default Messages;
