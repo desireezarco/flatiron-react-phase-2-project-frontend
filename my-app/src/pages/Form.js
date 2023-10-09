@@ -30,27 +30,17 @@ const Form = () => {
         <h2>Join Us On Our Special Day!</h2>
         <h4>RSVP Here</h4>
         <form onSubmit={handleSubmit}>
-            <label>Name:</label>
             <input 
-                type='text'
+                type='text' placeholder='name'
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}/>
-
-            <label>Email:</label>
             <input 
-                type='text'
+                type='text' placeholder='email'
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}/>
-
-            <label>Message for the Bride & Groom:</label>
-            <input 
-                type='text'
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}/>
-
-            <label>Dinner Choice:</label>
+        
             <select
                 value={food}
                 onChange={(e) => setFood(e.target.value)}>
@@ -60,6 +50,14 @@ const Form = () => {
                 <option value="seafood pasta">Seafood Pasta</option>
             </select>
             <button>Submit</button>
+
+            <div className='label-title'>
+            <label>Message for the Bride & Groom:</label>
+            </div>
+            <input 
+                type='text' placeholder='Congratulations!'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}/>
         </form>
     </div>
 )

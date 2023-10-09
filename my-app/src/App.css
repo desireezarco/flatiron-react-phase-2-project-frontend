@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
 }
 
 .home {
@@ -27,19 +25,34 @@
     display: block;
   }
   .form h1 {
+    padding: 50px;
     font-size: 20px;
     color: #f1356d;
     margin-bottom: 30px;
   }
+
+
+
   .form input, .form textarea, .form select {
     width: 100%;
     padding: 6px 10px;
+    text-align: center;
     margin: 10px 0;
     border: 1px solid #ddd;
     box-sizing: border-box;
     display: block;
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   }
-  .form button {
+
+  .label-title {
+    padding-top: 50px;
+    text-align: center;
+    position: center;
+}
+
+.form button {
     background: #f1356d;
     color: #fff;
     border: 0;
