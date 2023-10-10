@@ -30,6 +30,7 @@ const Form = () => {
         <h2>Join Us On Our Special Day!</h2>
         <h4>RSVP Here</h4>
         <form onSubmit={handleSubmit}>
+            
             <input 
                 type='text' placeholder='name'
                 required

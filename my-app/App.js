@@ -6,6 +6,7 @@ import Form from "./Form";
 import Messages from "./Messages";
 
 
+
 function App() {
     const [page, setPage] = useState("/")
     
@@ -13,15 +14,9 @@ function App() {
         <div>
         <NavBar onChangePage={setPage} />
         <Switch>
-            <Route path="/rsvp">
-                <Form />
-            </Route>
-            <Route path="/messages">
-                <Messages />
-            </Route>
-            <Route path="/">
-                <Home />
-            </Route>
+            <Route path="/rsvp"><Form /></Route>
+            <Route path="/messages"><Messages /></Route>
+            <Route path="/"><Home /></Route>
         </Switch>
         </div>
     );

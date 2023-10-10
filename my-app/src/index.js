@@ -6,6 +6,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Messages from "./pages/Messages";
 import Form from "./pages/Form";
+import MessageBoard from "./components/MessageBoard";
 
 const Layout = () => {
   return (
@@ -30,8 +31,8 @@ const router = createBrowserRouter([
       },
       {
         path: "messages",
-        element: <Messages />,
-      },
+        element: <MessageBoard />,
+    },
     ],
   },
 ]);

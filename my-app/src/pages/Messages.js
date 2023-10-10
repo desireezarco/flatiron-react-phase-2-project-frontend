@@ -16,7 +16,7 @@ fetch('http://localhost:3000/guests',{
 
     return (
         <div className="message">
-        <h1>Message Board Goes Here</h1>
+        <h1>Message Board</h1>
         </div>
     )
 }
