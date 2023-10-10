@@ -13,6 +13,13 @@
   font-size: 1.2rem;
 }
 
+.home{
+  background-image: url("../couple.png");
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
+  background-size: cover;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -65,13 +72,6 @@
   color: #09bef0;
 }
 
-.fa-bars {
-  color: #fff;
-}
-
-.menu-icon {
-  display: none;
-}
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
@@ -132,6 +132,5 @@
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    cursor: pointer;
   }
 }

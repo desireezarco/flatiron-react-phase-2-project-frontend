@@ -44,7 +44,7 @@ const Form = () => {
             <select
                 value={food}
                 onChange={(e) => setFood(e.target.value)}>
-                <option></option>
+                <option value="">Select</option>
                 <option value="steak and mushrooms">Steak and mushrooms</option>
                 <option value="salmon and veggies">Salmon and veggies</option>
                 <option value="seafood pasta">Seafood Pasta</option>

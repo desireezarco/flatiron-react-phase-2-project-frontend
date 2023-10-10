@@ -1,6 +1,8 @@
+import React, { useState } from 'react';
 
 
 const Messages = () => {
+    // const [messages, setMessage] = useState(null);
 
 fetch('http://localhost:3000/guests',{
     method: "GET",

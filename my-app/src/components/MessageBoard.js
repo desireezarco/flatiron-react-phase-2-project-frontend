@@ -37,7 +37,7 @@ import Messages from '../pages/Messages';
     return (
         <div>
         <h1>Hello</h1>
-        <h2>{Messages.name}</h2>   
+        <h2>{Messages.id}</h2>   
         </div>
 )}
 
