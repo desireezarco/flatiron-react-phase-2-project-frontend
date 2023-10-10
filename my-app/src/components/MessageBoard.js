@@ -5,7 +5,7 @@ import Messages from '../pages/Messages';
 
 function MessageBoard (){
     const [message, setMessages] = useState([])
-    
+
     useEffect(() => {
         fetch('http://localhost:3000/guests')
         .then(res => res.json())
@@ -13,6 +13,7 @@ function MessageBoard (){
         .catch(err => console.log(err))
     }, [])
 
+//mapping over the array of objects from json data and rendering onto the DOM
     return (
         <div className='list-container'>
             <Messages />
