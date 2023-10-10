@@ -3,33 +3,34 @@
     {
       "id": 1,
       "name": "Desiree",
-      "email": "desireeannzarco7@gmail.com"
+      "email": "desireeannzarco7@gmail.com",
+      "message": "Congratulations! I'm so happy for you both!"
     },
     {
-      "name": "jp",
+      "name": "Jp",
       "email": "jp@gmail.com",
-      "message": "ily",
+      "message": "Ily, you rock, don't ever change.",
       "food": "steak and mushrooms",
       "id": 2
     },
     {
-      "name": "precy",
+      "name": "Precy",
       "email": "precia92@gmail.com",
-      "message": "congratulations!",
+      "message": "Congratulations, my niece!",
       "food": "salmon and veggies",
       "id": 3
     },
     {
       "name": "Grace",
       "email": "amandagrace@gmail.com",
-      "message": "Hello!",
+      "message": "YAYYY!!!",
       "food": "salmon and veggies",
       "id": 4
     },
     {
-      "name": "Desiree",
+      "name": "Ben",
       "email": "desireeannzarco7@gmail.com",
-      "message": "Congrats! Happy for you!",
+      "message": "Finally",
       "food": "salmon and veggies",
       "id": 5
     }

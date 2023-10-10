@@ -14,13 +14,14 @@ function MessageBoard (){
     }, [])
 
     return (
-        <div>
+        <div className='list-container'>
+            <Messages />
             <ul>
-                <Messages />
                 {message.map((message, index)=> (
-                    <li key={index}>From {message.name} : {message.message}</li>
+                    <li key={index}>{message.name} : "{message.message}"</li>
                 ))}
             </ul>
+                
         </div>
     )
 }
