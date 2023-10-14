@@ -71,7 +71,9 @@
     color: black;
   }
 
-  .list-container{
+  .list{
     text-align: center;
     padding: 5px;
+    position: relative;
+    margin: 1rem;
   }

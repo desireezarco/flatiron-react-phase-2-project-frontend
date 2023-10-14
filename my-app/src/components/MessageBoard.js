@@ -15,14 +15,15 @@ function MessageBoard (){
 
 //mapping over the array of objects from json data and rendering onto the DOM
     return (
-        <div className='list-container'>
+        <div>
             <Messages />
-            <ul>
+            
                 {message.map((message, index)=> (
-                    <li key={index}>{message.name} : "{message.message}"</li>
-                ))}
-            </ul>
-                
+                    <div className='list'
+                    key={index}>{message.name} : "{message.message}"</div>
+            
+                    ))}
+           
         </div>
     )
 }

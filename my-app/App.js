@@ -4,21 +4,23 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Form from "./Form";
 import Messages from "./Messages";
-
-
+// import ErrorPage from "./src/components/ErrorPage";
 
 function App() {
     const [page, setPage] = useState("/")
     
     return (
+        <>
         <div>
         <NavBar onChangePage={setPage} />
         <Switch>
-            <Route path="/rsvp"><Form /></Route>
-            <Route path="/messages"><Messages /></Route>
-            <Route path="/"><Home /></Route>
+            <Route path="/rsvp" element={<Form />}/>
+            <Route path="/messages" element={<Messages />}/>
+            <Route path="/" element={<Home />}/>
+            {/* <Route path="/*" element={<ErrorPage />}/> */}
         </Switch>
         </div>
+        </>
     );
 }
 

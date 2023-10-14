@@ -11,7 +11,7 @@ const Form = () => {
 //handleSubmit function
     const handleSubmit = (e) => {
         e.preventDefault(); 
-        const form = { name, email, message, food}
+        const form = { name, email, message, food }
         console.log(form)
 
 //using POST fetch request

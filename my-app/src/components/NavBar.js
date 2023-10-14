@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./NavBar.css";
 import { GiBigDiamondRing } from "react-icons/gi";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
 
   return (
