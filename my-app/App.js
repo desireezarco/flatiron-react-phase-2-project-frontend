@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Form from "./Form";
 import Messages from "./Messages";
-// import ErrorPage from "./src/components/ErrorPage";
+
 
 function App() {
     const [page, setPage] = useState("/")
@@ -17,7 +17,7 @@ function App() {
             <Route path="/rsvp" element={<Form />}/>
             <Route path="/messages" element={<Messages />}/>
             <Route path="/" element={<Home />}/>
-            {/* <Route path="/*" element={<ErrorPage />}/> */}
+
         </Switch>
         </div>
         </>

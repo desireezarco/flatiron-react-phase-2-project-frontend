@@ -5,6 +5,11 @@
   font-family: "Open Sans";
 }
 
+h3 {
+  color: black;
+  padding: 30px;
+}
+
 .home {
   background-image: url('./couple.png');
   /* background-size: ; */
@@ -36,12 +41,11 @@
   }
 
 
-
   .form input, .form textarea, .form select {
     padding: 6px 10px;
     text-align: center;
-    margin: 10px 0;
-    padding:10px;
+    margin: 15px 0;
+    padding:15px;
     box-sizing: border-box;
     width: 100%;
     display: block;

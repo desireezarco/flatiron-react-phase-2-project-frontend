@@ -6,7 +6,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Form from "./pages/Form";
 import MessageBoard from "./components/MessageBoard";
-import ErrorPage from "./components/ErrorPage";
+
 
 const Layout = () => {
   return (
@@ -32,11 +32,7 @@ const router = createBrowserRouter([
       {
         path: "messages",
         element: <MessageBoard />,
-    },
-      {
-        path: "/*",
-        element: <ErrorPage />,
-    },
+    }
     ],
   },
 ]);
