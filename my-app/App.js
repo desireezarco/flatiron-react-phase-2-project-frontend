@@ -4,7 +4,6 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Form from "./Form";
 import Messages from "./Messages";
-import Timer from './Timer';
 
 
 function App() {
@@ -18,12 +17,7 @@ function App() {
             <Route path="/rsvp" element={<Form />}/>
             <Route path="/messages" element={<Messages />}/>
             <Route path="/" element={<Home />}/>
-
         </Switch>
-        </div>
-
-        <div className="countdown">
-            <Timer duration={}
         </div>
         </>
     );

@@ -27,7 +27,7 @@ const Form = () => {
 //form
     return (
         <div className='form'>
-        <h1>Join Us On Our Special Day! ❤️</h1>
+        <h3>Join Us On Our Special Day! ❤️</h3>
         <h4>RSVP Here</h4>
         <form onSubmit={handleSubmit}>
 
