@@ -5,6 +5,10 @@
   font-family: "Open Sans";
 }
 
+h1{
+  font-family: cursive;
+}
+
 h2{
   font-size: 25pt;
 }
@@ -14,6 +18,7 @@ h3 {
   padding: 30px;
   font-family: cursive;
   font-size: 40pt;
+
 }
 
 h4{
@@ -26,7 +31,6 @@ p {
 
 .home {
   background-image: url('./couple.png');
-  /* background-size: ; */
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -86,23 +90,26 @@ p {
   }
 
   /* timer styling */
-  .timer {
+  .timer-container {
     display: flex;
     flex: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 7em;
-    padding-top: 2em;
-    width: 100%;
-    height: 100%;
+    padding-bottom: 3em;
+    padding-top: 5em;
+    width: 60%;
+    height: 90%;
+    color: white;
   }
 
   .timer div:first-child {
     text-align: center;
+    color: white;
   }
 
   .timer-icon {
-    font-size: 8pt;
+    font-size: 2em;
+    color: white;
   }
 
   .timer div:first-child p {
@@ -110,16 +117,18 @@ p {
   }
 
   .timer div:last-child {
-    border: 1px solid white;
-    border-radius: 3px;
+    /* border: 3px solid white; */
+    text-align: center;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    margin-top: 3em;
-    padding: 3em;
-    text-align: center;
+    margin-top: 1em;
+    padding: .5em;
+    background-color: rgba(134, 130, 130, 0.6);
   }
 
   section p:first-child, .timer div:last-child span {
     font-size: 3em;
+    color: white;
   }
 
