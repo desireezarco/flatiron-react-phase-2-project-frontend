@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import { GiBigDiamondRing } from "react-icons/gi";
 
 const Home = () => {
-  const [timerDays, setTimerDays] = useState('00');
-  const [timerHours, setTimerHours] = useState('00');
-  const [timerMinutes, setTimerMinutes] = useState('00');
-  const [timerSeconds, setTimerSeconds] = useState('00');
+  const [days, setDays] = useState('00');
+  const [hours, setHours] = useState('00');
+  const [minutes, setMinutes] = useState('00');
+  const [seconds, setSeconds] = useState('00');
 
   let interval = useRef();
 
@@ -13,7 +12,7 @@ const Home = () => {
     const countdownDate = new Date('February 4, 2024 00:00:00').getTime();
 
     interval = setInterval(() => {
-      const now = new Date ().getTime();
+      const now = new Date().getTime();
       const distance = countdownDate - now;
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -24,12 +23,12 @@ const Home = () => {
       if (distance < 0) {
         //stop timer
         clearInterval(interval.current)
-      }else {
+      } else {
         //update timer
-        setTimerDays(days);
-        setTimerHours(hours);
-        setTimerMinutes(minutes);
-        setTimerSeconds(seconds);
+        setDays(days);
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
       }
     }, 1000)
   }
@@ -39,7 +38,6 @@ useEffect(() => {
   return() => {
     clearInterval(interval.current);
   }
-
 })
 
   return (
@@ -52,23 +50,23 @@ useEffect(() => {
         </div>
         <div>
           <section>
-            <p>{timerDays}</p>
-            <p><small>Days</small></p>
+            <p>{days}</p>
+            <p>Days</p>
           </section>
           <span>:</span>
           <section>
-            <p>{timerHours}</p>
-            <p><small>Hours</small></p>
+            <p>{hours}</p>
+            <p>Hours</p>
           </section>
           <span>:</span>
           <section>
-            <p>{timerMinutes}</p>
-            <p><small>Minutes</small></p>
+            <p>{minutes}</p>
+            <p>Minutes</p>
           </section>
           <span>:</span>
           <section>
-            <p>{timerSeconds}</p>
-            <p><small>Seconds</small></p>
+            <p>{seconds}</p>
+            <p>Seconds</p>
           </section>
         </div>
       </section>
