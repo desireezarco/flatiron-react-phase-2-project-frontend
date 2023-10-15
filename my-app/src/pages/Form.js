@@ -27,17 +27,17 @@ const Form = () => {
 //form
     return (
         <div className='form'>
-        <h2>Join Us On Our Special Day!</h2>
+        <h1>Join Us On Our Special Day! ❤️</h1>
         <h4>RSVP Here</h4>
         <form onSubmit={handleSubmit}>
 
             <input 
-                type='text' placeholder='first and last name'
+                type='text' placeholder='Full Name'
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}/>
             <input 
-                type='text' placeholder='email'
+                type='text' placeholder='Email'
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}/>
@@ -50,15 +50,16 @@ const Form = () => {
                 <option value="salmon and veggies">Salmon and veggies</option>
                 <option value="seafood pasta">Seafood Pasta</option>
             </select>
-            <button>Submit</button>
+           
 
-            <div className='label-title'>
-            <label>Message for the Bride & Groom:</label>
+            <div className='message-title'>
+            <h4>Message for the Bride & Groom:</h4>
             </div>
             <input 
                 type='text' placeholder='Congratulations!'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}/>
+            <button>Submit</button>
         </form>
     </div>
 )

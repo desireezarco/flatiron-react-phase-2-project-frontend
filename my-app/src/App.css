@@ -5,11 +5,17 @@
   font-family: "Open Sans";
 }
 
-h3 {
+h1 {
   color: black;
   padding: 30px;
+  font-family: cursive;
+  font-size: 40pt;
 }
 
+h4{
+  font-size: 18pt;
+
+}
 .home {
   background-image: url('./couple.png');
   /* background-size: ; */
@@ -20,7 +26,6 @@ h3 {
 }
 
 .form {
-    max-width: 400px;
     text-align: center;
     margin: 0 auto;
     top: 50%;
@@ -29,18 +34,7 @@ h3 {
     transform: translate(-50%, -50%);
   }
   
-  .form label {
-    display: block;
-    text-align: left;
-  }
-  .form h1 {
-    font-size: 20px;
-    padding: 50px;
-    margin-bottom: 30px;
-    color: #f1356d;
-  }
-
-
+/* styling for form */
   .form input, .form textarea, .form select {
     padding: 6px 10px;
     text-align: center;
@@ -48,36 +42,39 @@ h3 {
     padding:15px;
     box-sizing: border-box;
     width: 100%;
-    display: block;
+    display: float;
     border:0;
     border: 1px solid #ddd;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   }
 
-  .label-title {
+  .form button {
+    border: 0;
+    padding: 10px;
+    border-radius: 7px;
+    color: #fff;
+    background: #da7593;
+    }
+    
+  .message-title {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
     position: center;
 }
 
-.form button {
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  color: #fff;
-  background: #f1356d;
-  }
+.message {
+  text-align: center;
+  padding: 30px;
+  background: lightgray;
+  color: black;
+}
 
-  .message {
-    text-align: center;
-    padding: 30px;
-    background: lightgray;
-    color: black;
-  }
 
-  .list{
+
+.list{
     text-align: center;
     padding: 5px;
     position: relative;
     margin: 1rem;
+    
   }

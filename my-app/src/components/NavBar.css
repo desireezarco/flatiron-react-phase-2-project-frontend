@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+  }
 
 .navbar {
   background: pink;
@@ -11,26 +11,26 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-}
+  }
 
-.home{
+.home {
   background-image: url("../couple.png");
   background-repeat: no-repeat;
   background-position: 20% 40%;
   background-size: cover;
-}
+  }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   height: 50px;
-}
+  }
 
 .container {
   width: 100%;
   padding-right: 50px;
   padding-left: 50px;
-}
+  }
 
 .navbar-logo {
   color: rgba(249, 112, 180, 0.7);
@@ -39,7 +39,7 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
-}
+  }
 
 .nav-menu {
   display: flex;
@@ -48,19 +48,22 @@
   list-style: none;
   text-align: center;
   justify-content: flex-end;
-}
-
-.nav-item {
-  margin-top: 25px;
-    margin-bottom: 25px;
   }
-  
-  .nav-item:hover {
+
+.nav-menu.active {
+  background: #19191a;
+  left: 0;
+  opacity: 1;
+  transition: all 0.6s ease;
+  z-index: 1;
+  }
+
+.nav-page:hover {
     font-size:25px;
     font-size-adjust: 15px;
   }
   
-  .nav-links {
+.nav-links {
     color: #fff;
     display: flex;
     align-items: center;
@@ -69,62 +72,14 @@
     height: 100%;
   }
   
-  .activated {
-  color: rgba(249, 112, 180, 0.7);
-}
-
-
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu.active {
-    background: #19191a;
-    left: 0;
-    opacity: 1;
-    transition: all 0.6s ease;
-    z-index: 1;
-  }
-
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links:hover {
-    color: #19191a;
+.nav-links:hover {
+    color: rgba(249, 112, 180, 0.7);
     transform: scale(1.2);
     transition: all 0.3s ease;
   }
 
-  .nav-item:hover {
-    border: none;
+.activated {
+  color: rgba(249, 112, 180, 0.7);
   }
 
-  .nav-item {
-    width: 100%;
-  }
 
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-  }
-}

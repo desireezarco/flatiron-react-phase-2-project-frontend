@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "rgba(249, 112, 180, 0.7)" }}>
         <nav className="navbar">
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo">
@@ -21,21 +21,21 @@ function Navbar() {
             <div className="menu-icon" onClick={handleClick}>
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
+              <li className="nav-page">
                 <NavLink to="/"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")}>
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-page">
                 <NavLink to="/rsvp"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")}>
                   RSVP
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-page">
                 <NavLink to="/messages"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")}>

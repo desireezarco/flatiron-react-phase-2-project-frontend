@@ -17,13 +17,13 @@ function MessageBoard (){
     return (
         <div>
             <Messages />
-            <ul>
+           
                 {message.map((message, index)=> (
-                    <li  className='list'
-                    key={index}>{message.name} : "{message.message}"</li>
+                    <div  className='list'
+                    key={index}>{message.name} : "{message.message}"</div>
             
                     ))}
-            </ul>
+            
         </div>
     )
 }
