@@ -1,8 +1,3 @@
 # blog
- - does NOT have to relate to project
 
-## blog ideas
-
-
-
-## blog draft
+https://dev.to/desireezarco/how-to-organize-your-code-using-import-and-export-in-react-ih
